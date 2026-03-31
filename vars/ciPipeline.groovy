@@ -9,7 +9,6 @@ def call(Map config) {
         def slackChannel = config.slackChannel ?: '#ci-operation-notifications'
 
         try {
-
             stage('Clean Workspace') {
                 deleteDir()
             }
