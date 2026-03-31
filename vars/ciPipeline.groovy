@@ -1,7 +1,6 @@
 def call(Map config) {
 
     node {
-
         def repoUrl      = config.repoUrl
         def branch       = config.branch ?: 'main'
         def appType      = config.appType ?: 'python'
