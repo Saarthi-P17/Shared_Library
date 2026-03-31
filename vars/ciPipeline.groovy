@@ -11,7 +11,6 @@ def call(Map config) {
             stage('Clean Workspace') {
                 deleteDir()
             }
-
             stage('Checkout Code') {
                 git branch: branch, url: repoUrl
             }
